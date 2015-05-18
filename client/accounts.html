@@ -1,0 +1,16 @@
+<template name="accounts">
+    {{#if currentUser}} {{> urlList}} {{else}}
+    <div class="form-style">
+        <div class="container">
+            <div class="list-group-item">
+                <div class="pagination-centered">
+                    <h2>Please login to do this</h2>
+                   
+                        {{> atForm}}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}
+</template>

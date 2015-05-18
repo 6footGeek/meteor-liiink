@@ -7,3 +7,8 @@ Router.route('/', {
 Router.route('/submit', {
     name: 'urlSubmit'
 });
+
+Router.route('/login', {
+	name: 'accounts'
+});
+

@@ -11,3 +11,6 @@ twbs:bootstrap
 natestrauser:font-awesome
 iron:router
 msavin:mongol
+useraccounts:bootstrap
+accounts-twitter
+accounts-ui
