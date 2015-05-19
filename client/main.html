@@ -7,12 +7,10 @@
     <div class="navbar navbar-static-top">
         <div class="navbar-inner">
             <div class="container">
-                <a class="brand" href="/">Lii.ink</a>
-                <a class="pull-right">{{> atNavButton}}</a>
-                
+                <a class="brand" href="/">Lii.ink</a> {{> atNavButton}}             
                 {{#if currentUser}}
                 <a class="btn btn-primary pull-right" href="/submit" type="button">Submit Lii.ink</a>
-                {{/if}}
+                                {{/if}}
             </div>
         </div>
     </div>

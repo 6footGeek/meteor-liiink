@@ -2,11 +2,11 @@
     <div class="url">
         <li class="list-group-item">
             <a class="urlPost" href="#">
-                <p class="break-el">{{text}} 
+                <p class="break-el"><a href="{{pathFor 'urlPage'}}">{{text}}</a>
 
                 {{#if currentUser}}
                     
-                    <a class="btn" href="{{pathFor 'urlPage'}}">{{commentsCount}}Comments</a>
+                    <a class="btn" href="{{pathFor 'urlPage'}}">{{commentsCount}}<i class="fa fa-comments-o"></i></a>
                     <a class="btn pull-right btn-small no" href="#"><i class="fa fa-chevron-down"></i></a>
                      <a class="btn pull-right btn-small yes" href="#">{{score}}</a>
                     <a class="btn pull-right btn-small yes" href="#"><i class="fa fa-chevron-up"></i></a>
@@ -14,7 +14,7 @@
                     
                     {{else}}
                     
-                    <a class="btn" href="{{pathFor 'urlPage'}}">{{commentsCount}}Comments</a>
+                    <a class="btn" href="{{pathFor 'urlPage'}}">{{commentsCount}}<i class="fa fa-comments-o"></i></a>
                     <a class="btn pull-right btn-small no" href="/sign-in"><i class="fa fa-chevron-down"></i></a>
                      <a class="btn pull-right btn-small yes" href="#">{{score}}</a>
                     <a class="btn pull-right btn-small yes" href="/sign-in"><i class="fa fa-chevron-up"></i></a> 

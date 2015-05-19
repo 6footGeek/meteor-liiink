@@ -1,5 +1,5 @@
 Template.urlPage.helpers({
 	comments: function() {
-		return comments.find({commentId:this._id});
+		return comments.find({urlId:this._id});
 	}
 });

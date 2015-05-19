@@ -3,10 +3,7 @@
         <div class="container">
             {{>urlItem}}
             <div class="comment">
-             {{> commentSubmit}}
-             </div>
-            <div class="comment">
-                <h4>Comments</h4>{{#each comments}} {{> commentItem}} {{/each}}
+                <h4>Comments</h4> {{#each comments}} {{> commentItem}} {{/each}}
             </div>
         </div>
     </div>

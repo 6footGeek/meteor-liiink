@@ -1,6 +1,6 @@
 Template.urlItem.helpers({
     commentsCount: function() {
-        return Comments.find({
+        return comments.find({
             urlId: this._id
         }).count();
     }
@@ -39,7 +39,7 @@ Template.urlItem.events({
                 _id: this._id
             });
             if ($.inArray(Meteor.userId(), urlId.voted) !== -1) {
-                return "Ok";
+                return "Voted";
             } else {
                 var urlId = Session.get('selected_url');
                 urls.update(urlId, {
