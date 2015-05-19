@@ -1,5 +1,5 @@
 Template.urlList.helpers({
     urls: function() {
-        return urls.find();
+        return urls.find({}, {sort: {score: -1}});
     }
 });
