@@ -9,7 +9,7 @@ Template.urlSubmit.events({
             alert("You cant submit an empty url!");
         } else {
             Meteor.call('urlInsert', url);
-            Router.go('urlList');
+            Router.go('/',this);
         }
     }
 })
